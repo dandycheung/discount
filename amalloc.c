@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include "config.h"
 
+extern void* memset(void*,int,size_t);
+
 #define MAGIC 0x1f2e3d4c
 
 struct alist { int magic, size, index; int *end; struct alist *next, *last; };
